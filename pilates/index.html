@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pulso · Pilates y movimiento en Villa Crespo</title>
+    <meta name="description" content="Estudio de pilates reformer, mat, barre y funcional en Villa Crespo. Grupos chicos, reservas online y primera clase gratis." />
+    <meta name="theme-color" content="#0e0e0e" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23d2ff3c'/%3E%3Cpath d='M4 17h6l3-7 5 13 3-6h7' stroke='%230e0e0e' stroke-width='2.5' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <header class="nav">
+      <a class="logo" href="#top" aria-label="Pulso, inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 17h7l3-7 5 13 3-6h10" /></svg>
+        PULSO
+      </a>
+      <nav aria-label="Principal">
+        <a href="#clases">Clases</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#planes">Planes</a>
+      </nav>
+      <a class="btn btn-lime btn-sm" href="#horarios">Primera clase gratis</a>
+    </header>
+
+    <main id="top">
+      <!-- Firma: tipografía elástica. Las letras se estiran como un músculo
+           al acercar el cursor y rebotan con la velocidad del scroll. -->
+      <section class="hero">
+        <p class="eyebrow">Pilates · Barre · Funcional — Villa Crespo</p>
+        <h1 class="elastic-title" aria-label="Estirá tu límite">
+          <span class="el-line" data-elastic>ESTIRÁ</span>
+          <span class="el-line" data-elastic>TU LÍMITE</span>
+        </h1>
+        <div class="hero-foot">
+          <p class="lead">Grupos de hasta 8 personas, instructoras que te corrigen de verdad y reservas en dos toques. Vení a probar: la primera es gratis.</p>
+          <div class="hero-cta">
+            <a class="btn btn-lime" href="#horarios">Reservar clase</a>
+            <a class="btn btn-line" href="#planes">Ver planes</a>
+          </div>
+        </div>
+        <div class="sticker" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="sc" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" /></defs>
+            <circle cx="100" cy="100" r="98" />
+            <text><textPath href="#sc">1ª CLASE GRATIS ✦ 1ª CLASE GRATIS ✦ </textPath></text>
+          </svg>
+          <span>→</span>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Reformer</span><span>Mat</span><span>Barre</span><span>Funcional</span><span>Stretching</span><span>Reformer</span><span>Mat</span><span>Barre</span><span>Funcional</span><span>Stretching</span>
+        </div>
+      </div>
+
+      <section class="classes" id="clases">
+        <header class="head">
+          <h2 data-elastic-hover>CLASES</h2>
+          <p>Cuatro formas de moverte. Todas cuidan tu postura, todas te hacen transpirar.</p>
+        </header>
+        <div class="class-grid" data-classes></div>
+      </section>
+
+      <section class="breathe" aria-labelledby="br-title">
+        <div class="breath-orb" aria-hidden="true">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+          <span class="core"></span>
+          <span class="cue cue-in">Inhalá</span>
+          <span class="cue cue-out">Exhalá</span>
+        </div>
+        <div class="breathe-copy">
+          <p class="eyebrow">Pausa de 8 segundos</p>
+          <h2 id="br-title">Todo empieza<br />en la respiración.</h2>
+          <p>Seguí el círculo un par de veces. Así arranca cada clase en Pulso: conectando el centro antes de mover el resto.</p>
+        </div>
+      </section>
+
+      <section class="schedule" id="horarios">
+        <header class="head head-row">
+          <h2 data-elastic-hover>HORARIOS</h2>
+          <div class="filters" role="group" aria-label="Filtrar por clase" data-filters></div>
+        </header>
+        <div class="day-tabs" role="tablist" aria-label="Día" data-day-tabs></div>
+        <div class="week" data-week></div>
+        <p class="note">Tocá una clase para reservar tu lugar. Volvé a tocarla para liberarlo.</p>
+      </section>
+
+      <section class="plans" id="planes">
+        <header class="head head-row">
+          <h2 data-elastic-hover>PLANES</h2>
+          <div class="toggle" role="radiogroup" aria-label="Período de pago">
+            <button type="button" role="radio" aria-checked="true" data-period="m">Mensual</button>
+            <button type="button" role="radio" aria-checked="false" data-period="a">Anual <em>−20%</em></button>
+            <span class="toggle-pill" aria-hidden="true"></span>
+          </div>
+        </header>
+        <div class="plan-grid" data-plans></div>
+      </section>
+
+      <section class="final">
+        <p class="eyebrow">Gurruchaga 620 · Villa Crespo</p>
+        <a class="final-cta" href="#horarios"><span data-elastic>MOVETE</span></a>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>Pulso Estudio · Lunes a viernes de 7 a 22 · Sábados de 9 a 14 · @pulso.estudio</p>
+      <a href="/" class="back">← Ver todas las landings</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+  </body>
+</html>
