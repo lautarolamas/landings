@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grano Lento · Tostadores de especialidad</title>
+    <meta name="description" content="Café de especialidad tostado cada semana en Buenos Aires. Del grano a la taza, despacio." />
+    <meta name="theme-color" content="#f3ebdd" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='16' rx='10' ry='14' fill='%232b1a12'/%3E%3Cpath d='M16 3c-4 6 4 20 0 26' stroke='%23c98b4e' stroke-width='2' fill='none'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#tienda">Ir a la tienda</a>
+
+    <header class="nav">
+      <a class="logo" href="#top" aria-label="Grano Lento, inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="16" rx="10" ry="14" /><path d="M16 3c-4 6 4 20 0 26" /></svg>
+        <span>Grano&nbsp;Lento</span>
+      </a>
+      <nav aria-label="Principal">
+        <a href="#vertido">Proceso</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#suscripcion">Suscripción</a>
+      </nav>
+      <button class="cart-btn" type="button" aria-haspopup="dialog" aria-controls="cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg>
+        <span class="sr-only">Abrir carrito,</span>
+        <span class="cart-count" aria-live="polite">0</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>Tostado los martes · Palermo, Buenos Aires</p>
+          <h1 class="hero-title">
+            <span class="line"><span>Café que</span></span>
+            <span class="line"><span>se toma</span></span>
+            <span class="line"><span><em>su tiempo.</em></span></span>
+          </h1>
+          <p class="lead" data-reveal style="--d:.5s">
+            Compramos directo a productores, tostamos en tandas chicas y molemos cuando pedís.
+            Nada de apuro: solo granos frescos que saben a su origen.
+          </p>
+          <div class="cta" data-reveal style="--d:.65s">
+            <a class="btn btn-dark" href="#tienda">Ver los cafés</a>
+            <a class="btn btn-ghost" href="#vertido">Cómo lo hacemos ↓</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <svg class="badge" viewBox="0 0 200 200">
+            <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+            <text><textPath href="#circle">TOSTADO FRESCO · CADA SEMANA · TOSTADO FRESCO · CADA SEMANA ·</textPath></text>
+          </svg>
+          <svg class="cup" viewBox="0 0 320 340">
+            <g class="steam">
+              <path d="M120 120c-18-24 18-36 0-62s14-38 0-54" />
+              <path d="M160 116c-18-24 18-36 0-62s14-38 0-54" />
+              <path d="M200 120c-18-24 18-36 0-62s14-38 0-54" />
+            </g>
+            <ellipse class="saucer" cx="160" cy="306" rx="140" ry="24" />
+            <path class="mug" d="M60 150h200v70c0 52-40 86-100 86S60 272 60 220v-70Z" />
+            <path class="handle" d="M258 172c34 0 44 18 44 34s-14 36-48 36" />
+            <ellipse class="rim" cx="160" cy="150" rx="100" ry="18" />
+            <ellipse class="coffee" cx="160" cy="152" rx="88" ry="12" />
+            <path class="crema" d="M110 152c20-8 40 6 52-2s32-6 46 2" />
+          </svg>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true"><span></span>Deslizá para servir</div>
+      </section>
+
+      <!-- Firma: la pantalla entera se llena de café a medida que bajás -->
+      <section class="pour" id="vertido" aria-label="Del grano a la taza">
+        <div class="pour-stage">
+          <div class="pour-layer pour-base" data-layer="base">
+            <div class="pour-rail"><span>Del grano a la taza</span><b class="pour-pct">0%</b></div>
+            <ol class="chapters">
+              <li class="chapter is-active">
+                <span class="num">01</span>
+                <h2>Origen</h2>
+                <p>Fincas de altura en Huila, Colombia, y Sidama, Etiopía. Compramos directo y pagamos bastante más que el precio de bolsa.</p>
+                <strong class="stat">1.900<small>msnm</small></strong>
+              </li>
+              <li class="chapter">
+                <span class="num">02</span>
+                <h2>Tueste</h2>
+                <p>Tandas de 12&nbsp;kg con perfiles claros que respetan lo que el grano trae de la finca. Cada lote tiene su curva.</p>
+                <strong class="stat">205<small>°C</small></strong>
+              </li>
+              <li class="chapter">
+                <span class="num">03</span>
+                <h2>Molienda</h2>
+                <p>Molemos al momento de armar tu pedido, a la medida de tu método: espresso, filtro, prensa francesa o moka.</p>
+                <strong class="stat">800<small>µm</small></strong>
+              </li>
+              <li class="chapter">
+                <span class="num">04</span>
+                <h2>Extracción</h2>
+                <p>Agua a 93&nbsp;°C, tres minutos y un poco de paciencia. El resto lo pone el grano.</p>
+                <strong class="stat">93<small>°C</small></strong>
+              </li>
+            </ol>
+          </div>
+          <!-- La capa "líquida" se genera clonando la base y se recorta con la ola -->
+          <div class="pour-liquid" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="shop" id="tienda">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal>Tienda · tostado esta semana</p>
+          <h2 data-reveal style="--d:.1s">Elegí tu origen</h2>
+          <p data-reveal style="--d:.2s">Bolsas de 250&nbsp;g. Envío gratis en CABA desde dos bolsas.</p>
+        </header>
+        <div class="products" data-products></div>
+      </section>
+
+      <section class="sub" id="suscripcion">
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>panela</span><span>jazmín</span><span>cacao</span><span>durazno</span><span>caramelo</span><span>cereza</span><span>avellana</span><span>té negro</span>
+            <span>panela</span><span>jazmín</span><span>cacao</span><span>durazno</span><span>caramelo</span><span>cereza</span><span>avellana</span><span>té negro</span>
+          </div>
+        </div>
+        <div class="sub-inner">
+          <div>
+            <p class="eyebrow">Suscripción</p>
+            <h2>Cada 15 días, <em>en tu puerta.</em></h2>
+            <p>Un origen distinto cada envío, recién tostado. Pausás o cancelás cuando quieras.</p>
+          </div>
+          <form class="sub-form" data-sub>
+            <label for="sub-email" class="sr-only">Tu email</label>
+            <input id="sub-email" type="email" required placeholder="tu@email.com" autocomplete="email" />
+            <button class="btn btn-crema" type="submit">Quiero probar</button>
+            <p class="sub-note">Desde <b>$10.900</b> por envío.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>Grano Lento · Gorriti 4800, Palermo · Martes a domingo de 8 a 19</p>
+      <a href="/" class="back">← Ver todas las landings</a>
+    </footer>
+
+    <dialog class="cart" id="cart" aria-labelledby="cart-title">
+      <div class="cart-head">
+        <h2 id="cart-title">Tu pedido</h2>
+        <button type="button" class="cart-close" data-close aria-label="Cerrar carrito">✕</button>
+      </div>
+      <ul class="cart-items" data-cart-items></ul>
+      <p class="cart-empty" data-cart-empty>Todavía no agregaste nada. Los cafés te esperan.</p>
+      <div class="cart-foot">
+        <div class="cart-total"><span>Subtotal</span><b data-cart-total>$0</b></div>
+        <p class="cart-ship" data-cart-ship></p>
+        <button class="btn btn-dark btn-block" type="button" data-checkout>Finalizar compra</button>
+      </div>
+    </dialog>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+  </body>
+</html>

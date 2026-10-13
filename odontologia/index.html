@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alba · Odontología integral en Belgrano</title>
+    <meta name="description" content="Clínica odontológica en Belgrano. Turnos online, sin espera, con especialistas en ortodoncia, implantes, estética y odontopediatría." />
+    <meta name="theme-color" content="#0d3b3e" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230d3b3e'/%3E%3Cpath d='M7 13q9 12 18 0' stroke='%23ff7a59' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <header class="nav">
+      <a class="logo" href="#top" aria-label="Alba Odontología, inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" /><path d="M7 13q9 12 18 0" /></svg>
+        alba<span>odontología</span>
+      </a>
+      <nav aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <a class="btn btn-coral btn-sm" href="#turnos">Pedir turno</a>
+    </header>
+
+    <main id="top">
+      <!-- Firma: el borde inferior del hero es una sonrisa que reacciona al cursor y al scroll -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Odontología integral · Belgrano, CABA</p>
+            <h1>
+              <span class="w">Turnos</span> <span class="w">sin</span> <span class="w">espera.</span><br />
+              <span class="w">Sonrisas</span> <span class="w">sin</span> <span class="w hl">miedo.</span>
+            </h1>
+            <p class="lead">Especialistas en un mismo lugar, tecnología que no duele y turnos que se respetan. Reservá online en menos de un minuto.</p>
+            <div class="hero-cta">
+              <a class="btn btn-coral" href="#turnos">Reservar turno</a>
+              <a class="btn btn-line" href="https://wa.me/5491100000000" rel="noopener">WhatsApp</a>
+            </div>
+            <ul class="trust">
+              <li><b>4,9 ★</b> 1.240 reseñas</li>
+              <li><b>24 h</b> guardia de urgencias</li>
+              <li><b>OSDE · Swiss · Galeno</b></li>
+            </ul>
+          </div>
+          <div class="hero-cards" aria-hidden="true">
+            <div class="float-card fc-1">
+              <span class="pulse"></span>
+              <div><small>Próximo turno libre</small><b data-next-slot>Hoy</b></div>
+            </div>
+            <div class="float-card fc-2">
+              <svg viewBox="0 0 24 24"><path d="M12 3c3 0 7 1 7 6 0 4-2 6-2.5 9-.4 2-1.1 3-2 3-1.8 0-1.3-6-2.5-6s-.7 6-2.5 6c-.9 0-1.6-1-2-3C7 15 5 13 5 9c0-5 4-6 7-6Z" /></svg>
+              <div><small>Anestesia computarizada</small><b>Sin agujas a la vista</b></div>
+            </div>
+            <div class="float-card fc-3">
+              <div class="avatars"><span>LB</span><span>MO</span><span>SQ</span></div>
+              <div><small>Equipo</small><b>4 especialistas</b></div>
+            </div>
+          </div>
+        </div>
+        <div class="smile" aria-hidden="true">
+          <svg viewBox="0 0 1000 200" preserveAspectRatio="none">
+            <path class="smile-fill" d="M0 0 Q500 120 1000 0 V200 H0 Z" />
+            <path class="smile-line" d="M0 0 Q500 120 1000 0" />
+          </svg>
+          <div class="sparkles"></div>
+        </div>
+      </section>
+
+      <section class="services" id="servicios">
+        <header class="head">
+          <p class="eyebrow" data-reveal>Servicios</p>
+          <h2 data-reveal style="--d:.1s">Todo lo que tu boca necesita, <span class="hl">en un solo lugar.</span></h2>
+        </header>
+        <div class="svc-grid" data-services></div>
+      </section>
+
+      <section class="compare" aria-labelledby="cmp-title">
+        <div class="compare-copy">
+          <p class="eyebrow" data-reveal>Blanqueamiento LED</p>
+          <h2 id="cmp-title" data-reveal style="--d:.1s">Hasta 8 tonos más blanco en una sesión.</h2>
+          <p data-reveal style="--d:.2s">Deslizá para ver la diferencia. Tratamiento indoloro de 60 minutos, con gel desensibilizante incluido.</p>
+        </div>
+        <div class="cmp" data-cmp style="--pos:50%">
+          <div class="cmp-side cmp-before"><span class="cmp-tag">Antes</span></div>
+          <div class="cmp-side cmp-after"><span class="cmp-tag">Después</span></div>
+          <div class="cmp-handle" aria-hidden="true"><span>⟷</span></div>
+          <input class="cmp-range" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después" />
+        </div>
+      </section>
+
+      <section class="team" id="equipo">
+        <header class="head">
+          <p class="eyebrow" data-reveal>Equipo</p>
+          <h2 data-reveal style="--d:.1s">Personas que te explican todo <span class="hl">antes de empezar.</span></h2>
+        </header>
+        <div class="team-grid" data-team></div>
+      </section>
+
+      <section class="booking" id="turnos" aria-labelledby="bk-title">
+        <div class="bk-side">
+          <p class="eyebrow">Turnos online</p>
+          <h2 id="bk-title">Reservá en cuatro pasos.</h2>
+          <p>Elegís, confirmás y te llega un recordatorio el día anterior. Si no podés venir, cancelás sin costo hasta 12 h antes.</p>
+          <ol class="bk-steps" data-steps>
+            <li class="is-on">Tratamiento</li>
+            <li>Profesional</li>
+            <li>Día y horario</li>
+            <li>Tus datos</li>
+          </ol>
+        </div>
+        <form class="bk-card" data-booking novalidate>
+          <div class="bk-progress"><span data-progress></span></div>
+
+          <fieldset class="bk-step is-on" data-step="0">
+            <legend>¿Qué necesitás?</legend>
+            <div class="chips" data-treatments></div>
+          </fieldset>
+
+          <fieldset class="bk-step" data-step="1">
+            <legend>¿Con quién?</legend>
+            <div class="pros" data-pros></div>
+          </fieldset>
+
+          <fieldset class="bk-step" data-step="2">
+            <legend>Elegí día y horario</legend>
+            <div class="days" data-days></div>
+            <div class="slots" data-slots></div>
+          </fieldset>
+
+          <fieldset class="bk-step" data-step="3">
+            <legend>Tus datos</legend>
+            <div class="fields">
+              <label>Nombre y apellido<input name="nombre" required autocomplete="name" /></label>
+              <label>Celular<input name="tel" type="tel" required autocomplete="tel" inputmode="tel" /></label>
+              <label>Cobertura
+                <select name="cobertura">
+                  <option>Particular</option><option>OSDE</option><option>Swiss Medical</option><option>Galeno</option><option>Medifé</option>
+                </select>
+              </label>
+            </div>
+            <div class="summary" data-summary></div>
+          </fieldset>
+
+          <div class="bk-step bk-done" data-step="4" aria-live="polite">
+            <div class="ticket">
+              <div class="ticket-head">
+                <svg viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" /><path d="M15 27l7 7 15-16" /></svg>
+                <h3>¡Turno confirmado!</h3>
+              </div>
+              <div class="ticket-body" data-ticket></div>
+              <button type="button" class="btn btn-teal btn-block" data-ics>Agregar a mi calendario</button>
+              <button type="button" class="link" data-restart>Reservar otro turno</button>
+            </div>
+          </div>
+
+          <div class="bk-nav">
+            <button type="button" class="btn btn-ghost" data-prev>Atrás</button>
+            <button type="button" class="btn btn-teal" data-next disabled>Continuar</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="faq" id="preguntas">
+        <header class="head">
+          <p class="eyebrow" data-reveal>Preguntas frecuentes</p>
+          <h2 data-reveal style="--d:.1s">Lo que todos preguntan.</h2>
+        </header>
+        <div class="faq-list">
+          <details name="faq" data-reveal><summary>¿Atienden por obra social o prepaga?</summary><p>Sí. Trabajamos con OSDE, Swiss Medical, Galeno y Medifé. Si tu cobertura no está en la lista, te damos factura para pedir el reintegro.</p></details>
+          <details name="faq" data-reveal><summary>¿Duele la anestesia?</summary><p>Usamos anestesia computarizada: el líquido entra a velocidad constante y casi no se siente. Antes aplicamos un gel tópico para que ni notes el pinchazo.</p></details>
+          <details name="faq" data-reveal><summary>¿Qué pasa si tengo una urgencia fuera de horario?</summary><p>Tenemos guardia telefónica las 24 horas. Escribinos por WhatsApp y un profesional te responde y, si hace falta, te atiende el mismo día.</p></details>
+          <details name="faq" data-reveal><summary>¿Cuánto dura un tratamiento de ortodoncia invisible?</summary><p>Entre 6 y 18 meses según el caso. En la primera consulta hacemos un escaneo 3D y te mostramos cómo va a quedar tu sonrisa antes de empezar.</p></details>
+          <details name="faq" data-reveal><summary>¿Atienden a chicos?</summary><p>Sí, la Dra. Quiroga es odontopediatra. El consultorio infantil tiene juegos y explicamos cada paso para que la primera visita sea tranquila.</p></details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div>
+        <p class="logo">alba<span>odontología</span></p>
+        <p>Av. Cabildo 2150, piso 3 · Belgrano, CABA</p>
+        <p>Lunes a viernes de 9 a 20 · Sábados de 9 a 13</p>
+      </div>
+      <a href="/" class="back">← Ver todas las landings</a>
+    </footer>
+  </body>
+</html>

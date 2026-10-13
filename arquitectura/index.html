@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Taller Ochenta · Arquitectura</title>
+    <meta name="description" content="Estudio de arquitectura en Buenos Aires y Montevideo. Obras de vivienda, educación y espacio público." />
+    <meta name="theme-color" content="#ecebe6" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141414'/%3E%3Cpath d='M6 26V12l10-6 10 6v14' stroke='%23ff4a1c' stroke-width='2.5' fill='none'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <!-- Firma: cursor de mira tipo CAD con coordenadas -->
+    <div class="crosshair" aria-hidden="true">
+      <span class="ch-x"></span><span class="ch-y"></span>
+      <span class="ch-label">X 0000 · Y 0000</span>
+    </div>
+
+    <header class="top">
+      <a class="brand" href="#inicio">Taller&nbsp;Ochenta<sup>®</sup></a>
+      <nav aria-label="Principal">
+        <a href="#obras">Obras</a>
+        <a href="#estudio">Estudio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="clock" aria-label="Hora en Buenos Aires"><span>BUE</span> <time data-clock>--:--</time></p>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <h1 class="hero-title">
+          <span class="row"><span>Arquitectura</span></span>
+          <span class="row"><span>que empieza</span></span>
+          <span class="row"><span>con una <i>línea.</i></span></span>
+        </h1>
+
+        <svg class="axo" viewBox="0 0 520 440" aria-hidden="true">
+          <g class="draw">
+            <path d="M60 300 L260 400 L460 300 L260 200 Z" />
+            <path d="M100 280 L100 150 L260 230 L260 360" />
+            <path d="M260 360 L420 280 L420 150 L260 230" />
+            <path d="M100 150 L260 70 L420 150" />
+            <path d="M180 190 L180 110" />
+            <path d="M340 190 L340 110" />
+            <path d="M130 200 L130 290 M160 215 L160 305 M190 230 L190 320 M220 245 L220 335" />
+            <path d="M290 245 L290 335 M320 230 L320 320 M350 215 L350 305 M380 200 L380 290" />
+            <path d="M100 205 L260 285 L420 205" />
+            <path d="M330 120 L470 50 L520 75 L380 145" class="accent" />
+            <path d="M380 145 L380 175 M520 75 L520 105 M380 175 L520 105" class="accent" />
+            <path d="M20 330 L60 310 M20 330 L20 350 M60 310 L60 300" class="thin" />
+            <path d="M70 380 L250 470" class="thin dash" />
+          </g>
+          <g class="dims">
+            <path d="M60 330 L260 430" />
+            <text x="130" y="410" transform="rotate(26.5 130 410)">24.00</text>
+            <path d="M470 300 L470 150" />
+            <text x="480" y="232">9.60</text>
+          </g>
+        </svg>
+
+        <dl class="hero-meta">
+          <div><dt>Desde</dt><dd>2009</dd></div>
+          <div><dt>Obras</dt><dd>64</dd></div>
+          <div><dt>Sedes</dt><dd>Buenos Aires · Montevideo</dd></div>
+          <div class="hero-scroll"><dt>Seguí</dt><dd>Obras ↓</dd></div>
+        </dl>
+      </section>
+
+      <section class="works" id="obras">
+        <header class="dim-head">
+          <h2>Obras seleccionadas</h2>
+          <span class="dim-line" aria-hidden="true"></span>
+          <span class="mono">2021 — 2026</span>
+        </header>
+        <div class="grid" data-works></div>
+      </section>
+
+      <section class="studio" id="estudio">
+        <header class="dim-head">
+          <h2>Estudio</h2>
+          <span class="dim-line" aria-hidden="true"></span>
+          <span class="mono">Est. 2009</span>
+        </header>
+        <div class="studio-grid">
+          <blockquote class="manifesto" data-reveal>
+            “Dibujamos hasta que el edificio parece inevitable. Después lo construimos
+            con lo justo: <i>luz, sombra y material honesto.</i>”
+          </blockquote>
+          <dl class="stats">
+            <div data-reveal><dt>Obras construidas</dt><dd data-count="64">0</dd></div>
+            <div data-reveal style="--d:.1s"><dt>Años de práctica</dt><dd data-count="17">0</dd></div>
+            <div data-reveal style="--d:.2s"><dt>Premios y menciones</dt><dd data-count="12">0</dd></div>
+          </dl>
+        </div>
+        <ul class="team">
+          <li data-reveal><span class="mono">01</span><b>Julia Ferrán</b><span>Socia fundadora · Dirección de proyecto</span></li>
+          <li data-reveal><span class="mono">02</span><b>Tomás Aizen</b><span>Socio · Dirección de obra</span></li>
+          <li data-reveal><span class="mono">03</span><b>Camila Ruiz Otero</b><span>Arquitecta · Diseño y documentación</span></li>
+          <li data-reveal><span class="mono">04</span><b>Bruno Saldías</b><span>Arquitecto · Sustentabilidad</span></li>
+        </ul>
+      </section>
+
+      <section class="contact" id="contacto">
+        <p class="mono">¿Tenés un terreno, una idea o un edificio que recuperar?</p>
+        <a class="mail" href="mailto:hola@tallerochenta.com"><span>hola@taller</span><span>ochenta.com</span></a>
+        <div class="contact-cols">
+          <p>Av. Caseros 3201, Parque Patricios<br />Buenos Aires, Argentina</p>
+          <p>Bvar. España 2480<br />Montevideo, Uruguay</p>
+          <p>+54 11 4911 8080<br /><a href="/">← Ver todas las landings</a></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Ficha de obra (se abre con View Transitions) -->
+    <div class="detail" data-detail hidden role="dialog" aria-modal="true" aria-labelledby="d-title">
+      <button class="d-close" type="button" data-d-close aria-label="Cerrar obra">Cerrar ✕</button>
+      <div class="d-scroll">
+        <figure class="d-media" data-d-media></figure>
+        <div class="d-body">
+          <p class="mono" data-d-index></p>
+          <h2 id="d-title" data-d-title></h2>
+          <dl class="d-specs" data-d-specs></dl>
+          <p class="d-text" data-d-text></p>
+          <figure class="d-plan" data-d-plan></figure>
+          <button class="d-next" type="button" data-d-next></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
