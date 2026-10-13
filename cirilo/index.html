@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cirilo · Pan y café en Los Polvorines</title>
+    <meta name="description" content="Panadería y cafetería de masa madre en Los Polvorines. Pan del día, medialunas y café, todos los días en Remedios de Escalada 3199." />
+    <meta name="theme-color" content="#f4ecdf" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 20c0-7 6-12 12-12s12 5 12 12c0 3-3 4-12 4S4 23 4 20Z' fill='%23a85a24'/%3E%3Cpath d='M11 12l3 7M16 11l2 8M21 12l1 6' stroke='%23f4ecdf' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#visitanos">Ir a dirección y horarios</a>
+
+    <svg width="0" height="0" class="sprite" aria-hidden="true">
+      <symbol id="i-pan" viewBox="0 0 48 48"><path d="M5 30c0-10 9-17 19-17s19 7 19 17c0 4-5 6-19 6S5 34 5 30Z" /><path d="M16 19l4 10M24 17l3 11M32 19l2 8" /></symbol>
+      <symbol id="i-taza" viewBox="0 0 48 48"><path d="M9 20h26v8a11 11 0 0 1-11 11h-4A11 11 0 0 1 9 28Z" /><path d="M35 23h3a5 5 0 0 1 0 10h-4M17 8c-2 3 2 5 0 8M25 8c-2 3 2 5 0 8" /></symbol>
+      <symbol id="i-medialuna" viewBox="0 0 48 48"><path d="M6 31c4-10 11-15 18-15s14 5 18 15c-5 1-7-2-9-4-1 4-5 6-9 6s-8-2-9-6c-2 2-4 5-9 4Z" /><path d="M18 18l2 11M30 18l-2 11" /></symbol>
+      <symbol id="i-semilla" viewBox="0 0 48 48"><path d="M24 40V16" /><path d="M24 22c-6 0-10-4-10-10 6 0 10 4 10 10ZM24 28c6 0 10-4 10-10-6 0-10 4-10 10ZM24 34c-6 0-10-4-10-10 6 0 10 4 10 10Z" /></symbol>
+    </svg>
+
+    <header class="nav">
+      <a class="logo" href="#top" aria-label="Cirilo, inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 20c0-7 6-12 12-12s12 5 12 12c0 3-3 4-12 4S4 23 4 20Z" /><path class="cut" d="M11 12l3 7M16 11l2 8M21 12l1 6" /></svg>
+        <span>Cirilo</span>
+      </a>
+      <nav aria-label="Principal">
+        <a href="#proceso">Proceso</a>
+        <a href="#panes">Panes</a>
+        <a href="#momentos">Carta</a>
+        <a href="#visitanos">Visitanos</a>
+      </nav>
+      <a class="btn btn-crust nav-cta" href="https://www.google.com/maps/place/cirilo+picon/data=!4m2!3m1!1s0x95bca3135083ade3:0xe48c2dc414507ee9" target="_blank" rel="noopener">Cómo llegar</a>
+    </header>
+
+    <main id="top">
+      <!-- ============ HERO: harina que cae del cursor ============ -->
+      <section class="hero">
+        <canvas class="flour" aria-hidden="true"></canvas>
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>Panadería y cafetería · Los Polvorines</p>
+          <h1 class="hero-title" aria-label="Un clásico en tu barrio, un clásico en tu mesa.">
+            <span class="rise" aria-hidden="true">Un clásico</span>
+            <span class="rise" aria-hidden="true">en tu barrio,</span>
+            <span class="rise soft" aria-hidden="true">un clásico</span>
+            <span class="rise soft" aria-hidden="true">en tu mesa.</span>
+          </h1>
+          <p class="lead" data-reveal style="--d:.7s">
+            Pan de masa madre amasado acá mismo, medialunas recién salidas y un café de verdad.
+            Cocinamos todos los días desde las 7 de la mañana.
+          </p>
+          <div class="cta" data-reveal style="--d:.85s">
+            <a class="btn btn-dark" href="#visitanos">Vení a buscar tu pan</a>
+            <a class="btn btn-ghost" href="#proceso">Cómo lo hacemos ↓</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg class="badge" viewBox="0 0 200 200">
+            <defs><path id="ring" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+            <text><textPath href="#ring" textLength="486" lengthAdjust="spacing">MASA MADRE · PAN DEL DÍA · MASA MADRE · PAN DEL DÍA ·</textPath></text>
+          </svg>
+          <svg class="hero-loaf" viewBox="0 0 400 260">
+            <defs>
+              <radialGradient id="hl-g" cx="45%" cy="30%" r="80%">
+                <stop offset="0" stop-color="#d9934f" />
+                <stop offset=".6" stop-color="#a85a24" />
+                <stop offset="1" stop-color="#6e3714" />
+              </radialGradient>
+            </defs>
+            <ellipse class="hl-shadow" cx="200" cy="236" rx="170" ry="14" />
+            <path class="hl-body" d="M28 176C28 96 110 44 200 44s172 52 172 132c0 36-40 52-172 52S28 212 28 176Z" fill="url(#hl-g)" />
+            <g class="hl-cuts">
+              <path d="M112 92c18 26 30 54 34 84" />
+              <path d="M178 74c16 30 24 64 24 100" />
+              <path d="M246 78c12 28 16 58 14 88" />
+            </g>
+            <g class="hl-dust">
+              <circle cx="150" cy="70" r="2.4" /><circle cx="200" cy="58" r="1.8" /><circle cx="236" cy="66" r="2.2" /><circle cx="270" cy="84" r="1.6" /><circle cx="122" cy="88" r="1.8" /><circle cx="186" cy="64" r="1.2" /><circle cx="300" cy="104" r="1.4" />
+            </g>
+          </svg>
+        </div>
+        <p class="hero-hint" aria-hidden="true">Mové el cursor: está cayendo harina</p>
+      </section>
+
+      <!-- ============ PROMO ============ -->
+      <section class="promo" aria-label="Promoción">
+        <div class="promo-track">
+          <p><strong>Café con leche + 2 medialunas · $8.500</strong> <span>Todos los días, para consumir en el local</span> <i>✺</i></p>
+          <p aria-hidden="true"><strong>Café con leche + 2 medialunas · $8.500</strong> <span>Todos los días, para consumir en el local</span> <i>✺</i></p>
+          <p aria-hidden="true"><strong>Café con leche + 2 medialunas · $8.500</strong> <span>Todos los días, para consumir en el local</span> <i>✺</i></p>
+        </div>
+      </section>
+
+      <!-- ============ FIRMA: el pan se hace con el scroll ============ -->
+      <section class="bake" id="proceso" aria-labelledby="bake-title">
+        <div class="bake-stage">
+          <div class="bake-copy">
+            <p class="eyebrow">Del amasado a tu mano</p>
+            <h2 id="bake-title">Bajá despacio: <em>el pan se hace mientras scrolleás.</em></h2>
+            <ol class="steps">
+              <li class="step is-active"><b>01</b><span><strong>Amasado</strong>Harina, agua y nuestra masa madre de siempre.</span></li>
+              <li class="step"><b>02</b><span><strong>Sobado, armado y corte</strong>Sobamos la masa y la cortamos en la trinchadora.</span></li>
+              <li class="step"><b>03</b><span><strong>Fermentación</strong>Unas seis horas de reposo. Sin apuro.</span></li>
+              <li class="step"><b>04</b><span><strong>Horno</strong>21 minutos hasta que la corteza cruje.</span></li>
+              <li class="step"><b>05</b><span><strong>Listo</strong>Del horno al mostrador, y de ahí a tu mesa.</span></li>
+            </ol>
+          </div>
+
+          <div class="bake-art" aria-hidden="true">
+            <div class="oven"></div>
+            <div class="clock">
+              <span class="clock-label">Amasando</span>
+              <span class="clock-num">0<small>%</small></span>
+            </div>
+            <svg class="loaf" viewBox="0 0 400 300">
+              <defs>
+                <radialGradient id="lf-g" cx="45%" cy="28%" r="85%">
+                  <stop class="s1" offset="0" />
+                  <stop class="s2" offset=".55" />
+                  <stop class="s3" offset="1" />
+                </radialGradient>
+              </defs>
+              <ellipse class="lf-shadow" cx="200" cy="262" rx="160" ry="12" />
+              <g class="lf-shape">
+                <path class="lf-body" d="M40 210C40 130 116 78 200 78s160 52 160 132c0 36-36 50-160 50S40 246 40 210Z" fill="url(#lf-g)" />
+                <g class="lf-cuts">
+                  <path pathLength="1" d="M126 122c16 26 28 54 30 84" />
+                  <path pathLength="1" d="M186 104c14 30 22 64 22 100" />
+                  <path pathLength="1" d="M248 110c10 28 14 58 12 86" />
+                </g>
+                <g class="lf-flour">
+                  <circle cx="160" cy="100" r="2.4" /><circle cx="208" cy="90" r="1.8" /><circle cx="240" cy="98" r="2.2" /><circle cx="280" cy="118" r="1.6" /><circle cx="132" cy="118" r="1.8" /><circle cx="300" cy="140" r="1.4" /><circle cx="100" cy="150" r="1.6" />
+                </g>
+              </g>
+              <g class="lf-steam">
+                <path d="M160 70c-12-16 12-24 0-40" /><path d="M200 62c-12-16 12-24 0-40" /><path d="M240 70c-12-16 12-24 0-40" />
+              </g>
+            </svg>
+            <div class="bake-bar"><i></i></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PANES ============ -->
+      <section class="panes" id="panes" aria-labelledby="panes-title">
+        <header class="sec-head">
+          <p class="eyebrow" data-reveal>Lo que sale del horno</p>
+          <h2 id="panes-title" data-reveal>Si es una masa, <em>es madre.</em></h2>
+        </header>
+
+        <article class="feature" data-reveal>
+          <figure class="foto" data-foto="baguette-semillas" data-alt="Baguette con semillas activadas en masa madre de Cirilo">
+            <svg class="ico"><use href="#i-pan" /></svg>
+            <figcaption>Baguette con semillas</figcaption>
+          </figure>
+          <div class="feature-copy">
+            <span class="tag">Próximamente · carta primavera/verano</span>
+            <h3>Baguette con semillas activadas</h3>
+            <p>Hecha a mano con nuestra masa madre y semillas germinadas, que se digieren mejor y suman nutrientes. Miga abierta, corteza crocante.</p>
+            <p class="note">Y muy pronto vas a poder armar tu propio sándwich.</p>
+          </div>
+        </article>
+
+        <ul class="pan-grid">
+          <li data-reveal>
+            <figure class="foto" data-foto="masa-madre" data-alt="Panes de masa madre de Cirilo"><svg class="ico"><use href="#i-pan" /></svg><figcaption>Masa madre</figcaption></figure>
+            <h3>Pan de masa madre</h3>
+            <p>Baguettes y pan de campo con fermentación lenta.</p>
+          </li>
+          <li data-reveal style="--d:.08s">
+            <figure class="foto" data-foto="semillas" data-alt="Panes con semillas de Cirilo"><svg class="ico"><use href="#i-semilla" /></svg><figcaption>Semillas</figcaption></figure>
+            <h3>Semillas + masa madre</h3>
+            <p>Panes con semillas, y algunos aptos veganos <span aria-label="hoja">🌱</span></p>
+          </li>
+          <li data-reveal style="--d:.16s">
+            <figure class="foto" data-foto="medialunas" data-alt="Medialunas de Cirilo"><svg class="ico"><use href="#i-medialuna" /></svg><figcaption>Medialunas</figcaption></figure>
+            <h3>Medialunas</h3>
+            <p>Para el café de la mañana o para un día de lluvia.</p>
+          </li>
+          <li data-reveal style="--d:.24s">
+            <figure class="foto" data-foto="panes-hamburguesa" data-alt="Panes de hamburguesa de Cirilo"><svg class="ico"><use href="#i-pan" /></svg><figcaption>Panes de hamburguesa</figcaption></figure>
+            <h3>Panes de hamburguesa</h3>
+            <p>Artesanal, brioche o de papa. Se venden de a dos.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ MOMENTOS ============ -->
+      <section class="momentos" id="momentos" aria-labelledby="mom-title">
+        <header class="sec-head">
+          <p class="eyebrow" data-reveal>Una propuesta para cada momento</p>
+          <h2 id="mom-title" data-reveal>De la primera taza <em>a la cena.</em></h2>
+          <p class="sec-sub" data-reveal>Todo hecho en nuestra panadería artesanal, con productos más saludables y harinas integrales.</p>
+        </header>
+        <div class="dial" role="tablist" aria-label="Momentos del día">
+          <button role="tab" aria-selected="true" aria-controls="m-panel" data-m="0">Desayuno para llevar</button>
+          <button role="tab" aria-selected="false" aria-controls="m-panel" data-m="1">Desayuno en casa</button>
+          <button role="tab" aria-selected="false" aria-controls="m-panel" data-m="2">Almuerzo</button>
+          <button role="tab" aria-selected="false" aria-controls="m-panel" data-m="3">Merienda</button>
+          <button role="tab" aria-selected="false" aria-controls="m-panel" data-m="4">Cena</button>
+        </div>
+        <div class="m-panel" id="m-panel" role="tabpanel" aria-live="polite">
+          <div class="m-sun" aria-hidden="true"><i></i></div>
+          <div class="m-copy">
+            <p class="m-time">7:00</p>
+            <h3 class="m-title">Desayuno para llevar</h3>
+            <p class="m-text">Un café y medialunas al paso, camino al trabajo.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CAFÉ ============ -->
+      <section class="cafe" aria-labelledby="cafe-title">
+        <figure class="foto" data-foto="cafetera" data-alt="La máquina de café de Cirilo"><svg class="ico"><use href="#i-taza" /></svg><figcaption>La cafetera</figcaption></figure>
+        <div class="cafe-copy">
+          <p class="eyebrow" data-reveal>Y para acompañar</p>
+          <h2 id="cafe-title" data-reveal>Un café de verdad, <em>con la máquina a la altura.</em></h2>
+          <p data-reveal>Domingo, lluvia y café: vení a buscar tu pan y quedate a tomar algo con nosotros. Hay mesas para consumir en el local todos los días.</p>
+        </div>
+      </section>
+
+      <!-- ============ INSTAGRAM ============ -->
+      <section class="ig" aria-labelledby="ig-title">
+        <header class="sec-head row">
+          <div>
+            <p class="eyebrow" data-reveal>En Instagram</p>
+            <h2 id="ig-title" data-reveal>@cirilo.cafe</h2>
+          </div>
+          <a class="btn btn-ghost" href="https://www.instagram.com/cirilo.cafe/" target="_blank" rel="noopener" data-reveal>Seguinos</a>
+        </header>
+        <ul class="ig-grid">
+          <li><a href="https://www.instagram.com/p/DdRRsO1oJ77/" target="_blank" rel="noopener"><figure class="foto" data-foto="ig-momentos" data-alt="Productos de Cirilo para cada momento del día"><svg class="ico"><use href="#i-pan" /></svg><figcaption>Una propuesta para cada momento</figcaption></figure></a></li>
+          <li><a href="https://www.instagram.com/p/DdeJktNoBdx/" target="_blank" rel="noopener"><figure class="foto" data-foto="ig-promo" data-alt="Café con leche y dos medialunas"><svg class="ico"><use href="#i-taza" /></svg><figcaption>La promo real</figcaption></figure></a></li>
+          <li><a href="https://www.instagram.com/p/DGQyua1OQc4/" target="_blank" rel="noopener"><figure class="foto" data-foto="ig-proceso" data-alt="El proceso del pan en Cirilo"><svg class="ico"><use href="#i-pan" /></svg><figcaption>Desde el amasado</figcaption></figure></a></li>
+          <li><a href="https://www.instagram.com/p/DOgSj7xjaEM/" target="_blank" rel="noopener"><figure class="foto" data-foto="ig-semillas" data-alt="Panes con semillas y masa madre"><svg class="ico"><use href="#i-semilla" /></svg><figcaption>Semillas + masa madre</figcaption></figure></a></li>
+          <li><a href="https://www.instagram.com/p/DHEfe8mvuiO/" target="_blank" rel="noopener"><figure class="foto" data-foto="ig-medialunas" data-alt="Medialunas y café"><svg class="ico"><use href="#i-medialuna" /></svg><figcaption>Medialunas para este clima</figcaption></figure></a></li>
+          <li><a href="https://www.instagram.com/p/DATjv2bPB54/" target="_blank" rel="noopener"><figure class="foto" data-foto="ig-clasico" data-alt="Cirilo, panadería y cafetería"><svg class="ico"><use href="#i-taza" /></svg><figcaption>Un clásico en tu barrio</figcaption></figure></a></li>
+        </ul>
+      </section>
+
+      <!-- ============ VISITANOS ============ -->
+      <section class="visit" id="visitanos" aria-labelledby="visit-title">
+        <div class="visit-copy">
+          <p class="eyebrow" data-reveal>Visitanos</p>
+          <h2 id="visit-title" data-reveal>Remedios de Escalada 3199, <em>Los Polvorines.</em></h2>
+          <dl class="facts" data-reveal>
+            <div><dt>Días</dt><dd>De lunes a domingo</dd></div>
+            <div><dt>Horario</dt><dd>De 7 a 21 h <span class="open-now" hidden></span></dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/cirilo.cafe/" target="_blank" rel="noopener">@cirilo.cafe</a></dd></div>
+          </dl>
+          <div class="cta" data-reveal>
+            <a class="btn btn-dark" href="https://www.google.com/maps/place/cirilo+picon/data=!4m2!3m1!1s0x95bca3135083ade3:0xe48c2dc414507ee9" target="_blank" rel="noopener">Abrir en Google Maps</a>
+            <a class="btn btn-ghost" href="https://www.instagram.com/cirilo.cafe/" target="_blank" rel="noopener">Escribinos por Instagram</a>
+          </div>
+        </div>
+        <a class="map" href="https://www.google.com/maps/place/cirilo+picon/data=!4m2!3m1!1s0x95bca3135083ade3:0xe48c2dc414507ee9" target="_blank" rel="noopener" aria-label="Ver Cirilo en Google Maps" data-reveal>
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <path class="m-block" d="M0 0h400v300H0z" />
+            <path class="m-street" d="M-10 120L410 92M-10 250L410 214M120 -10L150 310M290 -10L310 310" />
+            <path class="m-main" d="M-10 182L410 150" />
+            <text class="m-name" x="24" y="172" transform="rotate(-4.4 24 172)">Remedios de Escalada</text>
+            <g class="m-pin" transform="translate(214 158)">
+              <circle r="34" class="m-pulse" />
+              <path d="M0 0c-14-16-20-26-20-34a20 20 0 0 1 40 0c0 8-6 18-20 34Z" />
+              <circle cy="-34" r="7" class="m-dot" />
+            </g>
+          </svg>
+          <span class="map-label">Cirilo · Pan y café</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p class="foot-big" aria-hidden="true">Cirilo</p>
+      <div class="foot-row">
+        <p>Panadería y cafetería · Remedios de Escalada 3199, Los Polvorines, Buenos Aires</p>
+        <p><a href="https://www.instagram.com/cirilo.cafe/" target="_blank" rel="noopener">Instagram</a> · <a href="/">Más landings</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

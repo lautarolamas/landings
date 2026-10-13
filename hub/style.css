@@ -54,3 +54,8 @@ strong { font-size: clamp(28px, 3vw, 46px); letter-spacing: -.035em; line-height
   .panels:hover .panel, .panels .panel:hover { flex-grow: 1; }
   .sig, .path { opacity: .85; transform: none; }
 }
+
+/* Cirilo: el pan leva */
+.p-cir { --bgc: #a85a24; --fgc: #fbf7ef; }
+.p-cir .art i { position: absolute; left: 50%; top: 22%; width: 150px; height: 90px; margin-left: -75px; border-radius: 75px 75px 30px 30px / 70px 70px 20px 20px; background: #ead9bb; transform-origin: 50% 100%; transform: scale(.7, .45); transition: transform 1.2s cubic-bezier(.34, 1.56, .64, 1), background 1.2s; box-shadow: inset 0 -10px 0 rgb(0 0 0 / .08); }
+.p-cir:hover .art i, .p-cir:focus-visible .art i { transform: scale(1.15, 1.05); background: #e0a25c; }
