@@ -2,7 +2,7 @@ import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 
 const root = import.meta.dirname
-const pages = ['cafe', 'arquitectura', 'odontologia', 'pilates']
+const pages = ['cafe', 'arquitectura', 'odontologia', 'pilates', 'cirilo']
 
 export default defineConfig({
   appType: 'mpa',
